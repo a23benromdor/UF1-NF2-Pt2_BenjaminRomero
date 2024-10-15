@@ -1,0 +1,25 @@
+.mati_item{
+    position: relative;
+}
+
+.mati_item > label{
+    position: absolute;
+    top: 20px;
+}
+ 
+img{
+    border-radius: 3px;
+    box-shadow: 2px 2px #535c5e;
+}
+
+label{
+    display: none;
+}
+
+img:hover{
+    box-shadow: 5px 5px #535c5e;
+}
+
+img:hover ~ label{
+    display: block;
+}
