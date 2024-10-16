@@ -1,25 +1,53 @@
-.mati_item{
-    position: relative;
+body{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
-.mati_item > label{
-    position: absolute;
-    top: 20px;
-}
- 
-img{
+.item{
+    position: relative;
+    width: 200px;
+    height: 200px;
     border-radius: 3px;
+    overflow: hidden;
     box-shadow: 2px 2px #535c5e;
 }
 
-label{
+.item > label{
+    position: absolute;
+    top: 0px;
     display: none;
+    background-color: rgba(177, 82, 255, 0.582);
+    width: 200px;
+    text-align: center;
+    padding: 10px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-variant: small-caps;
 }
 
-img:hover{
+.item:hover{
     box-shadow: 5px 5px #535c5e;
+}
+
+.item:hover > label{
+    background-color: rgba(173, 226, 25, 0.582);
 }
 
 img:hover ~ label{
     display: block;
+}
+
+.item > .butons{
+    position: absolute;
+    bottom: 15px;
+    width: 200px;
+    text-align: center;
+}
+
+.butons > input[type=button]{
+    border-radius: 50%;
+}
+
+.butons > input[type=text]{
+    width: 30px;
+    background-color: rgba(52, 226, 212, 0.582);
 }
